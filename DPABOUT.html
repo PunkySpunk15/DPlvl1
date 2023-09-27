@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="DPABOUT.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<link rel="icon" type="image/x-icon" href="https://i.imgur.com/YY9iJb1.jpg">
+</head><body id="grad">
+<header></header>
+<ul class="navy">
+    <h1 id="ex">Nancy Alsaadon's Portfolio</h1>
+    <li class="darknavy"><a href="index.html">Home</a></li>
+    <li class="darknavy"><a href="DPABOUT.html">Over mij</a></li>
+    <li class="darknavy"><a href="DPPROJECT.html">Projecten</a></li>
+    <li class="darknavy"><a href="DPCONTACT.html">Contact</a></li>
+  </ul>
+  <div id="wrapper">
+    <div id="jersey">Over mij</div>
+    <div class="shore">Mijn naam is Nancy en ik ben 16 jaar. Ik ben geboren en getogen in Amersfoort. Ik zit nu in mijn eerste jaar van opleiding Software Developer en ik heb html&css geleerd.
+      Ik kan beide uit mijn hoofd en ik vind het leuk om ze te gebruiken. Ik heb gekozen voor de opleiding, omdat ik denk dat programmeren bijzonder is en ik wil graag zelf websites en applicaties
+      kunnen maken.</div>
+    <div class="shore nr">Mijn hobbies zijn programmeren, spelen met mijn katten, gamen en YouTube kijken. Ik vind het leuk om soms kleine paginas/websites te maken in mijn vrije tijd 
+      om te experimenteren en zien wat ik allemaal kan doen met html en css. Ik heb 4 katten die allemaal heel lief en actief zijn. Ik woon naast een bos dus mijn katten zijn altijd buiten aan het spelen. 
+    </div>
+    <div class="slideshow-container">
+    
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="https://media.discordapp.net/attachments/1015993987410169858/1154024400518119424/20220315_101232.jpg?width=803&height=602" style="width:140px;height:190px" alt="Pepsi">
+        <div class="text">Pepsi</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="https://media.discordapp.net/attachments/1015993987410169858/1154024793079824504/IMG-20211102-WA0024.jpg?width=451&height=602" style="width:140px" alt="Vito&Avatar">
+        <div class="text">Vito & Avatar</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="https://media.discordapp.net/attachments/1015993987410169858/1153651904996450304/IMG-20221027-WA0011.jpg?width=451&height=602" style="width:140px" alt="Ginger">
+        <div class="text">Ginger</div>
+      </div>
+    
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+  </div>
+<script>let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }</script>
+<footer id="m249">Contact email 584683@edu.rocmn.nl</footer>
+</body>
+</html>
+ 

@@ -1,0 +1,140 @@
+#pp{
+    font-size: 35px;
+    font-family: Audiowide;
+    color: white;
+    border-bottom: 2px ridge white;
+}
+#AMR-2{
+    color: white;
+    border-style: outset;
+    border-color: white;
+    font-family: Audiowide;
+    padding-right: 4px;
+    text-decoration: none;
+}
+#AMR-2:hover{
+    color: #8800ff;
+    border-style: inset;
+    border-color: #8800ff;
+}
+#SLK{
+    color: white;
+    border-style: outset;
+    border-color: white;
+    font-family: Audiowide;
+    position: relative;
+    left: 99px;
+    bottom: 162px;
+    padding-right: 4px;
+    text-decoration: none;
+}
+#SLK:hover{
+    color: #8800ff;
+    border-style: inset;
+    border-color: #8800ff;
+}
+#honeybadger{
+    font-size: 20px;
+    font-family: Audiowide;
+    color: white;
+    width: 600px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 2px 2px #0000004a;
+}
+#honeybadger2{
+    font-size: 20px;
+    font-family: Audiowide;
+    color: white;
+    width: 600px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    left: 195px;
+    bottom: 177px;
+    text-shadow: 2px 2px #0000004a;
+}
+#pp{
+    margin-bottom: 40px;
+    position: sticky;
+    text-shadow: 2px 2px #0000004a;
+}
+
+footer{
+    background-color: black;
+    font-family: Audiowide;
+  }
+  
+#m249{
+    margin-top: 200px;
+    border: 2px solid  #8800ff;
+    color: #8800ff;
+    position: relative;
+    top: 7px;
+  }
+#wrapper {
+    padding-top: 170px;
+    width: 800px;
+    margin: 0 auto;
+  }
+body {
+	background: linear-gradient(-45deg, black, #8800ff, #4e0092, black);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+  margin: 0;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#ex{
+    text-align: left;
+    font-family: Audiowide;
+    color: #8800ff;
+    margin-left: 50px;
+    margin-right: auto;
+    font-size: 250%;
+}
+.navy {
+    list-style-type: none;
+    display: flex;
+    background-color: black;
+    padding: 20px;
+    margin: 0%;
+    border-bottom: ridge #8800ff;
+    align-items: center;
+  }
+  .darknavy {
+    font-family: Audiowide;
+  }
+  li {
+    float: right;
+    position: sticky;
+  }
+  
+  li a {
+    display: block;
+    color: #8800ff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-style: outset;
+    border-color: #8800ff;
+  }
+  
+  /* Change the link color to #00c8ffd8 on hover */
+  li a:hover {
+    background-color: black;
+    border-style: inset;
+  }
+  * {cursor: url(http://www.rw-designer.com/cursor-extern.php?id=48830), default !important;} 
+  a:hover {cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur),default  !important;}

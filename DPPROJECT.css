@@ -1,0 +1,182 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+}
+a{text-decoration: none;}
+#wrapper {
+  grid-area: 3 / 2 / 6 / 7;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.project{
+  margin-right: 64px;
+  background-color: #00000095;
+  /* border: 2px solid; */
+  margin-top: 35px;
+  margin-left: 10px;
+  padding: 16px;
+  border-radius: 13px;
+}
+img{
+  width: 90px;
+  height: 92px;
+  margin-left: 10px;
+}
+#pp {
+  font-size: 35px;
+  font-family: Audiowide;
+  color: white;
+  border-bottom: 2px ridge white;
+  text-shadow: 2px 2px #0000004a;
+  height: 50px;
+}
+
+.tegel {
+  background-color: black;
+  z-index: 100;
+  width: 150px;
+  height: 150px;
+}
+
+#AMR-2 {
+  color: white;
+  border-style: outset;
+  border-color: white;
+  font-family: Audiowide;
+  padding-right: 4px;
+  text-decoration: none;
+}
+
+#AMR-2:hover {
+  color: #8800ff;
+  border-style: inset;
+  border-color: #8800ff;
+}
+
+#SLK {
+  color: white;
+  border-style: outset;
+  border-color: white;
+  font-family: Audiowide;
+  position: relative;
+  left: 99px;
+  bottom: 162px;
+  padding-right: 4px;
+  text-decoration: none;
+}
+
+#SLK:hover {
+  color: #8800ff;
+  border-style: inset;
+  border-color: #8800ff;
+}
+
+.Name {
+  font-size: 20px;
+  font-family: Audiowide;
+  color: white;
+  padding-bottom: 15px;
+  text-shadow: 2px 2px #0000004a;
+  width: fit-content;
+  margin-bottom: 6px;
+}
+.long{
+  margin-left: 19px;
+}
+
+
+#m249 {
+  margin-top: 200px;
+  border: 2px solid #8800ff;
+  color: #8800ff;
+  position: relative;
+  top: 7px;
+  grid-area: 6 / 1 / 7 / 8;
+  background-color: black;
+  font-family: Audiowide;
+  padding-left: 48px;
+}
+
+body {
+  background: linear-gradient(-45deg, black, #8800ff, #4e0092, black);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: 100vh;
+  margin: 0;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#ex {
+  text-align: left;
+  font-family: Audiowide;
+  color: #8800ff;
+  margin-left: 50px;
+  margin-right: auto;
+  font-size: 250%;
+}
+
+.navy {
+  list-style-type: none;
+  display: flex;
+  background-color: black;
+  padding: 20px;
+  margin: 0%;
+  border-bottom: ridge #8800ff;
+  align-items: center;
+  grid-area: 1 / 1 / 2 / 8;
+}
+
+.darknavy {
+  font-family: Audiowide;
+}
+
+li {
+  float: right;
+  position: sticky;
+  margin-right: 5px;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-style: outset;
+  background-color: #8800ff;
+  border-color: #8800ff;
+}
+
+li a:hover {
+  border-style: inset;
+  background-color: #7900e3;
+}
+
+* {
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=48830), default !important;
+}
+
+a:hover {
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), default !important;
+}

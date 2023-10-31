@@ -4,7 +4,11 @@
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
 }
-a{text-decoration: none;}
+
+a {
+  text-decoration: none;
+}
+
 #wrapper {
   grid-area: 3 / 2 / 6 / 7;
   width: 800px;
@@ -16,20 +20,22 @@ a{text-decoration: none;}
   flex-direction: row;
   flex-wrap: nowrap;
 }
-.project{
+
+.project {
   margin-right: 64px;
   background-color: #00000095;
-  /* border: 2px solid; */
   margin-top: 35px;
   margin-left: 10px;
   padding: 16px;
   border-radius: 13px;
 }
-img{
+
+img {
   width: 90px;
   height: 92px;
   margin-left: 10px;
 }
+
 #pp {
   font-size: 35px;
   font-family: Audiowide;
@@ -61,24 +67,6 @@ img{
   border-color: #8800ff;
 }
 
-#SLK {
-  color: white;
-  border-style: outset;
-  border-color: white;
-  font-family: Audiowide;
-  position: relative;
-  left: 99px;
-  bottom: 162px;
-  padding-right: 4px;
-  text-decoration: none;
-}
-
-#SLK:hover {
-  color: #8800ff;
-  border-style: inset;
-  border-color: #8800ff;
-}
-
 .Name {
   font-size: 20px;
   font-family: Audiowide;
@@ -88,7 +76,8 @@ img{
   width: fit-content;
   margin-bottom: 6px;
 }
-.long{
+
+.long {
   margin-left: 19px;
 }
 
@@ -127,51 +116,6 @@ body {
   }
 }
 
-#ex {
-  text-align: left;
-  font-family: Audiowide;
-  color: #8800ff;
-  margin-left: 50px;
-  margin-right: auto;
-  font-size: 250%;
-}
-
-.navy {
-  list-style-type: none;
-  display: flex;
-  background-color: black;
-  padding: 20px;
-  margin: 0%;
-  border-bottom: ridge #8800ff;
-  align-items: center;
-  grid-area: 1 / 1 / 2 / 8;
-}
-
-.darknavy {
-  font-family: Audiowide;
-}
-
-li {
-  float: right;
-  position: sticky;
-  margin-right: 5px;
-}
-
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  border-style: outset;
-  background-color: #8800ff;
-  border-color: #8800ff;
-}
-
-li a:hover {
-  border-style: inset;
-  background-color: #7900e3;
-}
 
 * {
   cursor: url(http://www.rw-designer.com/cursor-extern.php?id=48830), default !important;

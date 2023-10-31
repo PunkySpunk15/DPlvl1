@@ -1,100 +1,137 @@
-<<<<<<< HEAD
-#pp {
-=======
-#pp{
->>>>>>> main
-    font-size: 35px;
+html {
     font-family: Audiowide;
+}
+
+* {
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=48830), default !important;
+}
+
+a:hover {
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), default !important;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 155px 1fr 1fr 1fr 20px;
+    gap: 0px 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#wrapper {
+    grid-area: 3 / 2 / 4 / 7;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.project {
+    margin-right: 64px;
+    background-color: #00000095;
+    margin-top: 35px;
+    margin-left: 10px;
+    padding: 16px;
+    border-radius: 13px;
+}
+
+.project img {
+    width: 90px;
+    height: 92px;
+    margin-left: 10px;
+    border-radius: 13px;
+}
+
+#ex {
+    text-align: left;
+    color: #8800ff;
+    margin-left: 50px;
+    margin-right: auto;
+    font-size: 250%;
+}
+
+.navy {
+    list-style-type: none;
+    display: flex;
+    background-color: black;
+    padding: 20px;
+    margin: 0%;
+    border-bottom: ridge #8800ff;
+    align-items: center;
+    grid-area: 1 / 1 / 2 / 8;
+}
+
+.darknavy {
+    padding-top: 15px;
+    float: right;
+    position: sticky;
+    margin-right: 5px;
+}
+
+.darknavy a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-style: outset;
+    background-color: #8800ff;
+    border-color: #8800ff;
+}
+
+.darknavy a:hover {
+    border-style: inset;
+    background-color: #7900e3;
+}
+
+#pp {
+    font-size: 35px;
     color: white;
     border-bottom: 2px ridge white;
     text-shadow: 2px 2px #0000004a;
-    max-width: 600px;
+    height: 50px;
 }
-<<<<<<< HEAD
 
 #AMR-2 {
-=======
-#AMR-2{
->>>>>>> main
     color: white;
     border-style: outset;
     border-color: white;
-    font-family: Audiowide;
     text-decoration: none;
+    padding-right: 4px;
     text-shadow: 2px 2px #0000004a;
 }
-<<<<<<< HEAD
 
 #AMR-2:hover {
-=======
-#AMR-2:hover{
->>>>>>> main
     color: #8800ff;
     border-style: inset;
     border-color: #8800ff;
 }
-<<<<<<< HEAD
 
 #honeybadger {
-=======
-#honeybadger{
->>>>>>> main
     font-size: 20px;
-    font-family: Audiowide;
     color: white;
     width: 600px;
     padding-top: 15px;
     padding-bottom: 15px;
     text-shadow: 2px 2px #0000004a;
 }
-<<<<<<< HEAD
-
-footer {
-=======
-footer{
->>>>>>> main
-    background-color: black;
-    font-family: Audiowide;
-}
-
-<<<<<<< HEAD
-#m249 {
-    border: 2px solid #8800ff;
-    color: #8800ff;
-    margin-top: 20px;
-}
-
-=======
-#m249{
-    border: 2px solid  #8800ff;
-    color: #8800ff;
-    margin-top: 20px;
-}
->>>>>>> main
-#wrapper {
-    padding-top: 170px;
-    width: 800px;
-    margin: auto;
-}
-<<<<<<< HEAD
 
 body {
     background: linear-gradient(-45deg, black, #8800ff, #4e0092, black);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     height: 100vh;
-=======
-body {
-	background: linear-gradient(-45deg, black, #8800ff, #4e0092, black);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
-	height: 100vh;
->>>>>>> main
     margin: 0;
 }
 
 @keyframes gradient {
-<<<<<<< HEAD
     0% {
         background-position: 0% 50%;
     }
@@ -108,71 +145,19 @@ body {
     }
 }
 
-#ex {
-=======
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-#ex{
->>>>>>> main
-    text-align: left;
-    font-family: Audiowide;
-    color: #8800ff;
-    margin-left: 50px;
-    margin-right: auto;
-    font-size: 250%;
-}
-<<<<<<< HEAD
-
-=======
->>>>>>> main
-.navy {
-    list-style-type: none;
-    display: flex;
-    background-color: black;
-    padding: 20px;
-    margin: 0%;
-    border-bottom: ridge #8800ff;
-<<<<<<< HEAD
-}
-
-=======
-  }
->>>>>>> main
-.darknavy {
-    padding-top: 15px;
-    font-family: Audiowide;
-}
-<<<<<<< HEAD
 
 #possum {
-=======
-#possum{
->>>>>>> main
     position: relative;
     left: 650px;
     bottom: 180px;
     max-width: 100px;
 }
-<<<<<<< HEAD
 
 #nr {
-=======
-#nr{
->>>>>>> main
     position: relative;
     left: 665px;
     bottom: 200px;
     font-size: 20px;
-    font-family: Audiowide;
     color: #8800ff;
     background-color: black;
     border-style: ridge;
@@ -181,51 +166,32 @@ body {
     text-align: center;
 }
 
-li {
-    float: right;
-    position: sticky;
-<<<<<<< HEAD
-    margin-right: 5px;
-}
-
-li a {
-    display: block;
-    color: black;
-=======
-  }
-  
-li a {
-    display: block;
-    color: #8800ff;
->>>>>>> main
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-style: outset;
-<<<<<<< HEAD
-    background-color: #8800ff;
-    border-color: #8800ff;
-}
-
-li a:hover {
-    border-style: inset;
-    background-color: #7900e3;
-}
-
-* {
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=48830), default !important;
-}
-
-a:hover {
-    cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), default !important;
-}
-=======
-    border-color: #8800ff;
-  }
-li a:hover {
+.tegel {
     background-color: black;
-    border-style: inset;
-  }
-  * {cursor: url(http://www.rw-designer.com/cursor-extern.php?id=48830), default !important;} 
-  a:hover {cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur),default  !important;}
->>>>>>> main
+    z-index: 100;
+    width: 150px;
+    height: 150px;
+}
+
+.Name {
+    font-size: 20px;
+    color: white;
+    padding-bottom: 15px;
+    text-shadow: 2px 2px #0000004a;
+    width: fit-content;
+    margin-bottom: 6px;
+}
+
+.long {
+    margin-left: 19px;
+}
+
+#m249 {
+    border: 2px solid #8800ff;
+    color: #8800ff;
+    position: relative;
+    top: 7px;
+    grid-area: 6 / 1 / 7 / 8;
+    background-color: black;
+    padding-left: 48px;
+}

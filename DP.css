@@ -239,7 +239,11 @@ body {
     position: relative;
     left: 650px;
     bottom: 180px;
-    max-width: 100px;
+    width: 200px;
+    height: 200px;
+    background-image: url(nosa2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #nr {

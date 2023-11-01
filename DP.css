@@ -10,10 +10,17 @@ a:hover {
     cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), default !important;
 }
 
+.project:hover,
+.Name:hover,
+.long:hover,
+.short:hover {
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), default !important;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 155px 1fr 1fr 1fr 20px;
+    grid-template-rows: 155px 1px 300px 1fr 20px;
     gap: 0px 0px;
 }
 
@@ -21,10 +28,24 @@ a {
     text-decoration: none;
 }
 
+#candy {
+    grid-area: 3 / 2 / 4 / 7;
+    padding-top: 130px;
+    width: 900px;
+    margin: 0 auto;
+}
+
 #wrapper {
     grid-area: 3 / 2 / 4 / 7;
     width: 800px;
     margin: 0 auto;
+    margin-top: 130px;
+    height: fit-content;
+
+}
+
+#home {
+    padding: 55px;
 }
 
 .projects {
@@ -42,11 +63,44 @@ a {
     border-radius: 13px;
 }
 
+.long {
+    margin-left: 19px;
+}
+
+.short {
+    margin-left: 10px;
+}
+
 .project img {
     width: 90px;
     height: 92px;
-    margin-left: 10px;
     border-radius: 13px;
+    text-align: center;
+}
+
+#jersey {
+    font-size: 35px;
+    font-family: Audiowide;
+    color: white;
+    border-bottom: 2px ridge white;
+    text-shadow: 2px 2px #0000004a;
+    margin-bottom: 40px;
+}
+
+.shore {
+    font-size: 20px;
+    font-family: Audiowide;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 2px 2px #0000004a;
+}
+
+.nr {
+    float: left;
+    width: 700px;
+    margin-right: 20px;
+    margin-bottom: 130px;
 }
 
 #ex {
@@ -91,12 +145,31 @@ a {
     background-color: #7900e3;
 }
 
+#pew {
+    font-size: 35px;
+    color: white;
+    border-bottom: 2px ridge white;
+    text-shadow: 2px 2px #0000004a;
+    height: 50px;
+    width: 630px;
+}
+
 #pp {
     font-size: 35px;
     color: white;
     border-bottom: 2px ridge white;
     text-shadow: 2px 2px #0000004a;
     height: 50px;
+    width: 800px;
+}
+
+#pewpew {
+    font-size: 35px;
+    font-family: Audiowide;
+    color: white;
+    text-shadow: 2px 2px #0000004a;
+    margin-bottom: 40px;
+    border-bottom: 2px ridge white;
 }
 
 #AMR-2 {
@@ -121,6 +194,22 @@ a {
     padding-top: 15px;
     padding-bottom: 15px;
     text-shadow: 2px 2px #0000004a;
+}
+
+.honeybadger {
+    font-size: 20px;
+    font-family: Audiowide;
+    color: white;
+    width: 600px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 2px 2px #0000004a;
+}
+
+.honeybadger img {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
 }
 
 body {
@@ -166,12 +255,6 @@ body {
     text-align: center;
 }
 
-.tegel {
-    background-color: black;
-    z-index: 100;
-    width: 150px;
-    height: 150px;
-}
 
 .Name {
     font-size: 20px;
@@ -182,8 +265,98 @@ body {
     margin-bottom: 6px;
 }
 
-.long {
-    margin-left: 19px;
+.slideshow-container {
+    max-width: 300px;
+    position: relative;
+    margin: auto;
+    float: left;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+.mySlides img {
+    width: 140px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: #0000004a;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: black;
+}
+
+.text {
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 12px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #333333;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 #m249 {

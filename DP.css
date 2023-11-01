@@ -379,7 +379,7 @@ body {
 }
 
 #m249 {
-    border: 2px solid #8800ff;
+    border-top: 2px solid #8800ff;
     color: #8800ff;
     grid-area: 6 / 1 / 7 / 8;
     background-color: black;
@@ -387,7 +387,7 @@ body {
     padding-top: 2px;
 }
 #m250 {
-    border: 2px solid #8800ff;
+    border-top: 2px solid #8800ff;
     color: #8800ff;
     grid-area: 6 / 1 / 7 / 8;
     background-color: black;

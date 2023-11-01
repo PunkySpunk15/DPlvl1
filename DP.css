@@ -20,7 +20,19 @@ a:hover {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 155px 1px 300px 1fr 20px;
+    grid-template-rows: 155px 1px 300px 265px 20px;
+    gap: 0px 0px;
+}
+.ccontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 155px 1px 250px 265px 20px;
+    gap: 0px 0px;
+}
+.containerr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 155px 1px 300px 360px 20px;
     gap: 0px 0px;
 }
 
@@ -150,8 +162,8 @@ a {
     color: white;
     border-bottom: 2px ridge white;
     text-shadow: 2px 2px #0000004a;
-    height: 50px;
-    width: 630px;
+    height: 45px;
+    width: 605px;
 }
 
 #pp {
@@ -177,8 +189,9 @@ a {
     border-style: outset;
     border-color: white;
     text-decoration: none;
-    padding-right: 4px;
     text-shadow: 2px 2px #0000004a;
+    margin-right: 150px;
+    padding: 5px;
 }
 
 #AMR-2:hover {
@@ -191,8 +204,8 @@ a {
     font-size: 20px;
     color: white;
     width: 600px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     text-shadow: 2px 2px #0000004a;
 }
 
@@ -237,19 +250,21 @@ body {
 
 #possum {
     position: relative;
-    left: 650px;
+    left: 670px;
     bottom: 180px;
     width: 200px;
     height: 200px;
     background-image: url(nosa2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    border: black 2px solid;
+    border-radius: 13px;
 }
 
 #nr {
     position: relative;
-    left: 665px;
-    bottom: 200px;
+    left: 690px;
+    bottom: 195px;
     font-size: 20px;
     color: #8800ff;
     background-color: black;
@@ -285,6 +300,7 @@ body {
     width: 140px;
     height: 200px;
     object-fit: cover;
+    border-radius: 15px;
 }
 
 .prev,
@@ -317,7 +333,6 @@ body {
 .text {
     color: white;
     font-size: 15px;
-    padding: 8px 12px;
     position: absolute;
     bottom: 12px;
     width: 100%;
@@ -366,9 +381,16 @@ body {
 #m249 {
     border: 2px solid #8800ff;
     color: #8800ff;
-    position: relative;
-    top: 7px;
     grid-area: 6 / 1 / 7 / 8;
     background-color: black;
     padding-left: 48px;
+    padding-top: 2px;
+}
+#m250 {
+    border: 2px solid #8800ff;
+    color: #8800ff;
+    grid-area: 6 / 1 / 7 / 8;
+    background-color: black;
+    padding-left: 48px;
+    padding-top: 15px;
 }

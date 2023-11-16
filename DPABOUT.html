@@ -4,8 +4,7 @@
 <head>
   <link rel="stylesheet" href="DP.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-  <link rel="icon" type="image/x-icon"
-    href="ginger.png">
+  <link rel="icon" type="image/x-icon" href="ginger.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DP| Over Mij</title>
 </head>
@@ -18,6 +17,35 @@
     <li class="darknavy"><a href="DPPROJECT.html">Projecten</a></li>
     <li class="darknavy"><a href="DPCONTACT.html">Contact</a></li>
   </ul>
+  <div class="reveal">
+    <button class="revealbutton btntxt" onclick="myFunction()"><img
+        src="https://cdn3.iconfinder.com/data/icons/menu-icons-1/100/menu-512.png" class="btntxt" width="50"
+        height="50">
+      <div class="btntxt">Over mij</div>
+    </button>
+    <div class="revealcontent" id="myDropdown">
+      <a href="index.html">Home</a>
+      <a href="DPPROJECT.html">Projecten</a>
+      <a href="DPCONTACT.html">Contact</a>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.btntxt')) {
+        var dropdowns = document.getElementsByClassName("revealcontent");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }</script>
   <div id="candy">
     <div id="jersey">Over mij</div>
     <div class="shore">Mijn naam is Nancy en ik ben 16 jaar. Ik ben geboren en getogen in Amersfoort. Ik zit nu in mijn

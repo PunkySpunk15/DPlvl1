@@ -4,8 +4,7 @@
 <head>
     <link rel="stylesheet" href="DP.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-    <link rel="icon" type="image/x-icon"
-        href="ginger.png">
+    <link rel="icon" type="image/x-icon" href="ginger.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DP| Projecten</title>
 </head>
@@ -18,28 +17,59 @@
         <li class="darknavy"><a href="DPPROJECT.html">Projecten</a></li>
         <li class="darknavy"><a href="DPCONTACT.html">Contact</a></li>
     </ul>
+    <div class="reveal">
+        <button class="revealbutton btntxt" onclick="myFunction()"><img
+                src="https://cdn3.iconfinder.com/data/icons/menu-icons-1/100/menu-512.png" class="btntxt" width="50"
+                height="50">
+            <div class="btntxt">Projecten</div>
+        </button>
+        <div class="revealcontent" id="myDropdown">
+            <a href="DPPROJECT.html">Home</a>
+            <a href="DPABOUT.html">Over mij</a>
+            <a href="DPCONTACT.html">Contact</a>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.btntxt')) {
+                var dropdowns = document.getElementsByClassName("revealcontent");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }</script>
     <div id="wrapper">
         <div id="pp">Mijn projecten</div>
         <div class="projects">
             <a href="nulmeting.html" target="_blank">
                 <div class="project">
                     <div class="Name">Nulmeting LvL1<br>
-                    </div><img class="longer" src="nulmeting.png">
+                    </div><img class="long" src="nulmeting.png">
             </a>
         </div>
         <a href="../Technowire/technowire.html" target="_blank">
             <div class="project">
-                <div class="Name">Technowire<br></div>
+                <div class="Name short">Technowire<br></div>
                 <img class="long" src="tech.png">
         </a>
-        </div>
-        <a href="../DPLVL2/nulmetinglvl2.html" target="_blank">
-            <div class="project">
-                <div class="Name">Nulmeting LvL2<br></div>
-                <img class="longer" src="../DPLVL2/kop.png">
-        </a>
-    </div></div></div>
-</div>
+    </div>
+    <a href="../DPLVL2/nulmetinglvl2.html" target="_blank">
+        <div class="project">
+            <div class="Name">Nulmeting LvL2<br></div>
+            <img class="long" src="../DPLVL2/LVL2.png">
+    </a>
+    </div>
+    </div>
+    </div>
+    </div>
 </body>
 <footer id="m250">Contact email 584683@edu.rocmn.nl</footer>
 

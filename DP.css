@@ -12,8 +12,7 @@ a:hover {
 
 .project:hover,
 .Name:hover,
-.long:hover,
-.short:hover {
+.long:hover {
     cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur), default !important;
 }
 
@@ -27,10 +26,9 @@ a {
     margin: 0 auto;
 }
 
-#wrapper {
+#wrapper,
+.wrapper {
     margin: 0 auto;
-    margin-top: 130px;
-    height: fit-content;
 }
 
 #home {
@@ -45,16 +43,13 @@ a {
     margin-right: 64px;
     background-color: #00000095;
     margin-top: 35px;
-    margin-left: 10px;
     padding: 16px;
     border-radius: 13px;
+    width: 189px;
 }
 
 .long {
-    margin-left: 19px;
-}
-.longer{
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 .project img {
@@ -86,32 +81,27 @@ a {
     float: left;
     width: 700px;
     margin-right: 20px;
-    margin-bottom: 130px;
 }
 
 #ex {
     text-align: left;
     color: #8800ff;
-    margin-left: 50px;
     margin-right: auto;
     font-size: 250%;
 }
 
 .navy {
     list-style-type: none;
-    display: flex;
     background-color: black;
     padding: 20px;
     margin: 0%;
     border-bottom: ridge #8800ff;
-    align-items: center;
 }
 
 .darknavy {
     padding-top: 15px;
     float: right;
     position: sticky;
-    margin-right: 5px;
 }
 
 .darknavy a {
@@ -145,7 +135,6 @@ a {
     border-bottom: 2px ridge white;
     text-shadow: 2px 2px #0000004a;
     height: 50px;
-    width: 800px;
 }
 
 #pewpew {
@@ -157,17 +146,16 @@ a {
     border-bottom: 2px ridge white;
 }
 
-#AMR-2 {
+.AMR-2 {
     color: white;
     border-style: outset;
     border-color: white;
     text-decoration: none;
     text-shadow: 2px 2px #0000004a;
-    margin-right: 150px;
     padding: 5px;
 }
 
-#AMR-2:hover {
+.AMR-2:hover {
     color: #8800ff;
     border-style: inset;
     border-color: #8800ff;
@@ -222,9 +210,6 @@ body {
 
 
 #possum {
-    position: relative;
-    left: 670px;
-    bottom: 180px;
     width: 200px;
     height: 200px;
     background-image: url(nosa2.jpg);
@@ -235,9 +220,6 @@ body {
 }
 
 #nr {
-    position: relative;
-    left: 690px;
-    bottom: 195px;
     font-size: 20px;
     color: #8800ff;
     background-color: black;
@@ -255,6 +237,10 @@ body {
     text-shadow: 2px 2px #0000004a;
     width: fit-content;
     margin-bottom: 6px;
+}
+
+.short {
+    margin-left: 30px;
 }
 
 .slideshow-container {
@@ -351,24 +337,16 @@ body {
     }
 }
 
-#m249 {
-    border-top: 2px solid #8800ff;
-    color: #8800ff;
-    background-color: black;
-    padding-left: 48px;
-    padding-top: 2px;
-}
-
+#m249,
 #m250 {
     border-top: 2px solid #8800ff;
     color: #8800ff;
     background-color: black;
-    padding-left: 48px;
-    padding-top: 15px;
+    padding-left: 65px;
+    padding-top: 2px;
 }
 
 @media screen and (min-width:770px) {
-
 
     .ccontainer {
         display: grid;
@@ -386,10 +364,17 @@ body {
 
     .navy {
         grid-area: 1 / 1 / 2 / 8;
+        display: flex;
+        align-items: center;
+    }
+
+    .darknavy {
+        margin-right: 5px;
     }
 
     #wrapper,
-    #candy {
+    #candy,
+    .wrapper {
         grid-area: 3 / 2 / 4 / 7;
     }
 
@@ -397,8 +382,43 @@ body {
         width: 900px;
     }
 
-    #wrapper {
+    #wrapper,
+    .wrapper {
         width: 800px;
+        margin-top: 130px;
+        height: fit-content;
+    }
+
+    #pp {
+        width: 800px;
+    }
+
+    #possum {
+        position: relative;
+        left: 670px;
+        bottom: 180px;
+    }
+
+    #nr {
+        position: relative;
+        left: 690px;
+        bottom: 195px;
+    }
+
+    .nr {
+        margin-bottom: 130px;
+    }
+
+    .AMR-2 {
+        margin-right: 150px;
+    }
+
+    #ex {
+        margin-left: 50px;
+    }
+
+    .reveal {
+        display: none;
     }
 
     #m250,
@@ -410,30 +430,253 @@ body {
         flex-direction: row;
         flex-wrap: nowrap;
     }
+
+    #posmobile,
+    #nrmobile {
+        display: none;
+    }
 }
 
 @media screen and (max-width:770px) and (min-width:600px) {
-    .ccontainer,.containerr {
+
+    .ccontainer,
+    .containerr {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 0px 0px;
-        grid-auto-flow: row;
     }
 
     .navy {
         grid-area: 1 / 1 / 2 / 8;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 0px 10px 55px;
     }
 
-    #candy,#wrapper {
-        grid-area: 2 / 1 / 5 / 8;
+    .darknavy {
+        margin-right: 60px;
     }
+
+    #candy,
+    #wrapper,
+    .wrapper {
+        grid-area: 2 / 1 / 7 / 8;
+    }
+
+    #wrapper {
+        margin-top: 50px;
+        width: 590px;
+        height: 535px;
+    }
+
+    .wrapper {
+        margin-top: 75px;
+        width: 590px;
+        height: 460px;
+    }
+
+    #candy {
+        width: 600px;
+        height: 775px;
+    }
+
+    #m250,
+    #m249 {
+        grid-area: 7 / 1 / 8 / 8;
+    }
+
+    #pew {
+        margin-left: 315px;
+        margin-top: 55px;
+        width: 260px;
+    }
+
+    #ex {
+        margin-right: 50px;
+    }
+
+    #possum {
+        position: relative;
+        bottom: 236px;
+    }
+
+    #nr {
+        position: relative;
+        bottom: 253px;
+        left: 42px;
+    }
+
+    .slideshow-container {
+        margin-left: 210px;
+    }
+
+    .nr {
+        width: 600px;
+        margin-bottom: 28px;
+    }
+
+    #honeybadger {
+        width: 265px;
+        padding-left: 315px;
+    }
+
+    #AMR-1 {
+        margin-left: 315px;
+    }
+
+    #pp {
+        width: 605px;
+    }
+
     .projects {
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-    #m250,#m249 {
-        grid-area: 5 / 1 / 6 / 8;
+        flex-wrap: wrap;
     }
 
+    .reveal {
+        display: none;
+    }
+
+    #posmobile,
+    #nrmobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .ccontainer,
+    .containerr {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+    }
+
+    .darknavy {
+        display: none;
+    }
+
+    #candy,
+    #wrapper,
+    .wrapper {
+        grid-area: 3 / 1 / 7 / 8;
+    }
+    #candy{
+        padding-top: 50px;
+        width: 300px;
+        height: 500px;
+    }
+    #jersey{
+        font-size: 26px;
+    }
+    .shore{
+        font-size: 15px;
+    }
+
+    #ex {
+        font-size: 190%;
+    }
+
+    #pew {
+        margin: 20px 0px 10px 95px;
+        width: 94px;
+        font-size: 30px;
+        height: 35px;
+    }
+
+    #honeybadger {
+        width: 295px;
+        font-size: 18px;
+        text-align: center;
+        padding: 10px 0px 30px 0px;
+    }
+
+    #posmobile {
+        width: 150px;
+        height: 150px;
+        margin-left: 65px;
+        background-image: url(nosa2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: black 2px solid;
+        border-radius: 13px;
+    }
+
+    #nrmobile {
+        font-size: 20px;
+        color: #8800ff;
+        background-color: black;
+        border-style: ridge;
+        border-color: #8800ff;
+        width: 45%;
+        text-align: center;
+        position: relative;
+        bottom: 15px;
+        left: 73px;
+        transform: scale(0.8);
+    }
+    #AMR-1{
+        margin-left: 45px;
+    }
+
+
+    #nr,
+    #possum {
+        display: none;
+    }
+
+    #m250,
+    #m249 {
+        grid-area: 7 / 1 / 8 / 8;
+        padding-left: 20px;
+    }
+
+    .navy {
+        grid-area: 1 / 1 / 3 / 8;
+    }
+
+    .reveal {
+        position: relative;
+        top: 145px;
+        display: inline-block;
+        grid-area: 1 / 1 / 3 / 8;
+    }
+
+    .revealbutton {
+        background-color: #8800ff;
+        border: 2px outset #4e0092;
+        width: 115px;
+        height: 55px;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .revealbutton:active {
+        border: #4e0092 inset;
+        background-color: #7900e3;
+    }
+
+    .revealcontent {
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 160px;
+        box-shadow: 10px 5px 10px 0px #00000033;
+        z-index: 1;
+        margin-left: 20px;
+    }
+
+    .revealcontent a {
+        display: block;
+        padding: 12px 16px;
+        border: #8800ff 1px ridge;
+        color: white;
+    }
+
+
+    .show {
+        display: block;
+    }
 }

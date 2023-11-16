@@ -1,28 +1,62 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="DP.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-<link rel="icon" type="image/x-icon" href="ginger.png">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DP| Home</title>
+  <link rel="stylesheet" href="DP.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="icon" type="image/x-icon" href="ginger.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DP| Home</title>
 </head>
+
 <body class="ccontainer">
-<ul class="navy">
+  <ul class="navy">
     <h1 id="ex">Nancy Alsaadon's Portfolio</h1>
     <li class="darknavy"><a href="index.html">Home</a></li>
     <li class="darknavy"><a href="DPABOUT.html">Over mij</a></li>
     <li class="darknavy"><a href="DPPROJECT.html">Projecten</a></li>
     <li class="darknavy"><a href="DPCONTACT.html">Contact</a></li>
   </ul>
-<div id="wrapper">
+  <div class="reveal">
+    <button class="revealbutton btntxt" onclick="myFunction()"><img
+        src="https://cdn3.iconfinder.com/data/icons/menu-icons-1/100/menu-512.png" class="btntxt" width="50"
+        height="50">
+      <div class="btntxt">Home</div>
+    </button>
+    <div class="revealcontent" id="myDropdown">
+      <a href="DPABOUT.html">Over mij</a>
+      <a href="DPPROJECT.html">Projecten</a>
+      <a href="DPCONTACT.html">Contact</a>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.btntxt')) {
+        var dropdowns = document.getElementsByClassName("revealcontent");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }</script>
+  <div class="wrapper">
     <div id="pew">Hallo!</div>
+    <div id="posmobile"></div>
+    <div id="nrmobile" title="Mijn studentnummer">584683</div>
     <div id="honeybadger">Ik ben Nancy Alsaadon en ik studeer om een software developer te worden(Cohort 2023).</div>
-    <a href="DPABOUT.html" id="AMR-2" target="_self">Over mij ></a>
-    <a href="Nancy Alsaadon's CV.pdf" id="AMR-2" target="_blank">Mijn CV ></a>
+    <a href="DPABOUT.html" class="AMR-2" id="AMR-1" target="_self">Over mij ></a>
+    <a href="Nancy Alsaadon's CV.pdf" class="AMR-2" target="_blank">Mijn CV ></a>
     <div id="possum"></div>
     <div id="nr" title="Mijn studentnummer">584683</div>
-</div>
+  </div>
 </body>
 <footer id="m250">Contact email 584683@edu.rocmn.nl</footer>
+
 </html>
